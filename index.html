@@ -143,6 +143,25 @@
         opacity: 1;
         transform: rotate(0deg);
       }
+
+      @media (max-width: 600px) {
+        header img {
+          min-height: 500px;
+        }
+
+        main {
+          padding: var(--space-7) var(--space-4) var(--space-8);
+        }
+
+        section.images {
+          max-height: none;
+          flex-direction: column;
+        }
+        section.images img {
+          min-width: 300px;
+          aspect-ratio: 408 / 467;
+        }
+      }
     </style>
   </head>
   <body>
@@ -172,6 +191,7 @@
 
       <section>
         <h2>Så här gör du</h2>
+        <!-- using <ol> because instructions order matters -->
         <ol>
           <li>Blanda mjöl och salt i en bunke.</li>
           <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
