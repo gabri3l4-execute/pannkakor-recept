@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enkelt recept på pannkakor</title>
+    <!-- Adding a preconnect for slightly faster font loading -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- for older browsers (not necessary in most cases) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+      :root {
+        --base-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        --primary-color: #a10000;
+        --text-color: rgba(0, 0, 0, 1);
+        --gray-light: #ebebeb;
+        --bg-color-white: rgba(252, 252, 252, 1);
+        --bg-color-pink: rgba(161, 0, 0, 0.3);
+        --max-width: 1280px;
+        --min-width: 230px;
+        /* spacing scale (4px baseline) / */
+        --space-0: 0;
+        --space-1: 0.25rem; /* 4px */
+        --space-2: 0.5rem; /* 8px */
+        --space-3: 0.75rem; /* 12px */
+        --space-4: 1rem; /* 16px */
+        --space-5: 1.5rem; /* 24px */
+        --space-6: 2rem; /* 32px */
+        --space-7: 3rem; /* 48px */
+        --space-8: 4rem; /* 64px */
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: var(--base-font);
+        font-weight: 400;
+        font-size: var(--space-4);
+        background-color: var(--bg-color-pink);
+        color: var(--text-color);
+        line-height: normal;
+        letter-spacing: normal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: var(--space-8);
+        min-width: var(--min-width);
+      }
+
+      header {
+        width: 100%;
+        max-width: 1280px;
+        max-height: 500px;
+        overflow: hidden; /* hides cropped overflow */
+        border: 1px solid rgba(252, 252, 252, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* fills container while keeping aspect ratio */
+        object-position: center; /* centers the visible area */
+        opacity: 1;
+        transform: rotate(0deg);
+      }
+
+      main {
+        width: 100%;
+        max-width: var(--max-width);
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-5);
+        padding: var(--space-7);
+        padding-bottom: var(--space-8);
+        background: var(--bg-color-white);
+      }
+
+      h1 {
+        color: var(--primary-color);
+        font-size: calc(var(--space-5) + var(--space-1));
+        font-weight: 700;
+        margin: 0;
+      }
+
+      p.subtitle {
+        background-color: var(--gray-light);
+        padding: var(--space-4);
+        margin: 0;
+        font-weight: 400;
+        display: flex;
+        gap: 10px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: var(--space-5);
+        font-weight: 700;
+      }
+
+      ul,
+      ol {
+        margin-left: 1.8rem;
+        gap: 12px;
+        display: flex;
+        flex-flow: column;
+      }
+
+      li {
+        margin-bottom: 0;
+      }
+
+      section {
+        gap: var(--space-4);
+        display: flex;
+        flex-direction: column;
+      }
+      section.images {
+        max-height: 467px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: anchor-center;
+        justify-content: space-between;
+        gap: var(--space-6);
+      }
+
+      section.images img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 580 / 467;
+        object-fit: cover; /* fills container while keeping aspect ratio */
+        object-position: center; /* centers the visible area */
+        opacity: 1;
+        transform: rotate(0deg);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="images/pannkakor-main.jpg" alt="Pannkakor med bär och grädde" />
+    </header>
+
+    <main>
+      <h1>Enkelt recept på pannkakor</h1>
+      <p class="subtitle">
+        Gör traditionella tunna pannkakor med detta enkla och goda
+        pannkaksrecept.
+      </p>
+
+      <section>
+        <h2>Ingredienser</h2>
+        <p>För 4 portioner</p>
+        <ul>
+          <li>2 1/2 dl vetemjöl</li>
+          <li>1/2 tsk salt</li>
+          <li>6 dl mjölk</li>
+          <li>3 ägg</li>
+          <li>smör (till stekning)</li>
+          <li>sylt, bär eller frukt till servering</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Så här gör du</h2>
+        <ol>
+          <li>Blanda mjöl och salt i en bunke.</li>
+          <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
+          <li>Vispa i resten av mjölken och äggen.</li>
+          <li>Låt smeten vila ca 10 minuter.</li>
+          <li>
+            Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek-
+            eller pannkakspanna.
+          </li>
+          <li>Servera med sylt, bär eller frukt.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Serveringsförslag</h2>
+        <section class="images">
+          <img
+            src="images/pannkakor-serveringsforslag-1.jpg"
+            alt="Pannkakor på tallrik"
+          />
+          <img
+            src="images/pannkakor-serveringsforslag-2.jpg"
+            alt="Pannkakor med apelsin och sylt"
+          />
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
