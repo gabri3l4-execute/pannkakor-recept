@@ -152,7 +152,7 @@ section.images img {
   }
 
   section.images {
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 2fr);
   }
 
   section.images img {
