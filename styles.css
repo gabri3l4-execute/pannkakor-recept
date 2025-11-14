@@ -12,6 +12,7 @@ For custome fonts. Or self hosted fonts:
    }
 */
 
+/* Document's root element, <html> */
 :root {
   --base-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
@@ -151,7 +152,7 @@ section.images img {
   }
 
   section.images {
-    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
   section.images img {
