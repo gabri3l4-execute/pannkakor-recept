@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
+/* 
+For custome fonts. Or self hosted fonts:
+   @font-face {
+     font-family: myFont; /* set name
+     src: url(sansation_light.woff); /* url of the font
+   }
+
+   p {
+     font-family: myFont; /* use font
+   }
+*/
+
 :root {
   --base-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
